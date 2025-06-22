@@ -1,0 +1,8 @@
+com\petshop\dao\ConsultaDAO.class
+com\petshop\model\Dono.class
+com\petshop\dao\PetDAO.class
+com\petshop\Main.class
+com\petshop\dao\ConexaoJDBC.class
+com\petshop\model\Consulta.class
+com\petshop\model\Pet.class
+com\petshop\dao\DonoDAO.class
