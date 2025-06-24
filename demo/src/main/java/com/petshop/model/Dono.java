@@ -7,7 +7,8 @@ public class Dono {
 
     public Dono() {}
 
-    public Dono(String nome, String telefone) {
+    public Dono(int id, String nome, String telefone) {
+        this.id = id;
         this.nome = nome;
         this.telefone = telefone;
     }

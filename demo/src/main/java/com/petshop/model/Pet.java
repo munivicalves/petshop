@@ -9,7 +9,8 @@ public class Pet {
 
     public Pet() {}
 
-    public Pet(String nome, String tipo, int idade, int donoId) {
+    public Pet(int id, String nome, String tipo, int idade, int donoId) {
+        this.id = id;
         this.nome = nome;
         this.tipo = tipo;
         this.idade = idade;

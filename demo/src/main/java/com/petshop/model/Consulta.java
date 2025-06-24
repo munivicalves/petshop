@@ -10,11 +10,12 @@ public class Consulta {
 
     public Consulta() {}
 
-    public Consulta(LocalDateTime data, String descricao, int petId) {
-        this.data = data;
-        this.descricao = descricao;
-        this.petId = petId;
-    }
+public Consulta(int id, LocalDateTime data, String descricao, int petId) {
+    this.id = id;
+    this.data = data;
+    this.descricao = descricao;
+    this.petId = petId;
+}
 
     // Getters and Setters
     public int getId() { return id; }
