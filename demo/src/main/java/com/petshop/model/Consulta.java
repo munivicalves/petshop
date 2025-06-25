@@ -17,7 +17,6 @@ public Consulta(int id, LocalDateTime data, String descricao, int petId) {
     this.petId = petId;
 }
 
-    // Getters and Setters
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
     public LocalDateTime getData() { return data; }

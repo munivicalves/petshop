@@ -102,7 +102,6 @@ public class TelaCadastroPet extends JFrame {
 
         petDao = new PetDAO();
 
-        // Ação Salvar
         btnSalvar.addActionListener((ActionEvent e) -> {
             try {
                 if (camposValidos()) {
@@ -124,10 +123,8 @@ public class TelaCadastroPet extends JFrame {
             }
         });
 
-        // Ação Cancelar
         btnCancelar.addActionListener((ActionEvent e) -> limparCampos());
 
-        // Ação Listar
         btnListar.addActionListener(e -> {
             List<Pet> pets = petDao.read();
             if (pets.isEmpty()) {
@@ -147,7 +144,6 @@ public class TelaCadastroPet extends JFrame {
             JOptionPane.showMessageDialog(this, sb.toString());
         });
 
-        // Ação Atualizar
         btnAtualizar.addActionListener((var e) -> {
             try {
                 String inputId = JOptionPane.showInputDialog(this, "Digite o ID do pet a atualizar:");
@@ -183,7 +179,6 @@ public class TelaCadastroPet extends JFrame {
             }
         });
 
-        // Ação Excluir
         btnExcluir.addActionListener(e -> {
             try {
                 String inputId = JOptionPane.showInputDialog(this, "Digite o ID do pet a excluir:");

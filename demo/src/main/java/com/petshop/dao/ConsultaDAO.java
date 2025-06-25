@@ -8,7 +8,6 @@ import com.petshop.model.Consulta;
 
 public class ConsultaDAO {
 
-    // CREATE
     public void create(Consulta consulta) {
         String sql = "INSERT INTO Consulta (data, descricao, pet_id) VALUES (?, ?, ?)";
         try (Connection conn = ConexaoJDBC.getConnection();
@@ -29,7 +28,6 @@ public class ConsultaDAO {
         }
     }
 
-    // READ (listar todas as consultas)
     public List<Consulta> read() {
         List<Consulta> consultas = new ArrayList<>();
         String sql = "SELECT * FROM Consulta";

@@ -112,7 +112,6 @@ public class TelaAgendamentos extends JFrame {
 
         ConsultaDao = new ConsultaDAO();
 
-        // Ação Salvar
         btnSalvar.addActionListener((ActionEvent e) -> {
             try {
                 String textoData = fieldData.getText().trim(); // Ex: 22/06/2025 14:00
@@ -146,10 +145,8 @@ public class TelaAgendamentos extends JFrame {
             }
         });
 
-        // Ação Cancelar
         btnCancelar.addActionListener(e -> limparCampos());
 
-        // Ação Listar
         btnListar.addActionListener(e -> {
             List<Consulta> consultas = ConsultaDao.read();
             if (consultas.isEmpty()) {
@@ -169,7 +166,6 @@ public class TelaAgendamentos extends JFrame {
             JOptionPane.showMessageDialog(null, sb.toString());
         });
 
-        // Ação Atualizar
         btnAtualizar.addActionListener(e -> {
             try {
                 String inputId = JOptionPane.showInputDialog("Digite o ID da consulta a atualizar:");
@@ -216,7 +212,6 @@ public class TelaAgendamentos extends JFrame {
             }
         });
 
-        // Ação Excluir
         btnExcluir.addActionListener(e -> {
             try {
                 String inputId = JOptionPane.showInputDialog("Digite o ID da consulta a excluir:");
@@ -236,7 +231,6 @@ public class TelaAgendamentos extends JFrame {
             }
         });
 
-        // Ação Voltar ao Menu
         btnMenu.addActionListener(e -> {
             frameTela.dispose();
             new TelaMenuPrincipal().setVisible(true);

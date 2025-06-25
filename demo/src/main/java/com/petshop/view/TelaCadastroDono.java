@@ -37,7 +37,7 @@ public class TelaCadastroDono extends JFrame {
 
     private JTextField fieldNome;
     private JTextField fieldTelefone;
-    private JTextField fieldId; // campo para ID para atualizar/excluir
+    private JTextField fieldId; 
 
     private JPanel painelComponentes;
 
@@ -72,7 +72,6 @@ public class TelaCadastroDono extends JFrame {
         fieldTelefone = new JTextField();
         fieldTelefone.setPreferredSize(new Dimension(310, 25));
 
-        // Campo ID para atualizar e excluir
         JLabel labelId = new JLabel("ID (para atualizar/excluir):");
         fieldId = new JTextField();
         fieldId.setPreferredSize(new Dimension(310, 25));
@@ -114,7 +113,6 @@ public class TelaCadastroDono extends JFrame {
 
         donoDao = new DonoDAO();
 
-        // Ações dos botões
         btnSalvar.addActionListener((ActionEvent e) -> {
             try {
                 Dono dono = new Dono();
